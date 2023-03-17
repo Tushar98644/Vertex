@@ -4,6 +4,8 @@ from django.contrib import admin
 from django.urls import path,include
 from Items.views import MinuteViewSet,GalleryViewSet,SchoolViewSet,CollegeViewSet
 from rest_framework import routers
+from django.conf.urls import url
+from django.views.static import serve
 
 
 route = routers.DefaultRouter()
@@ -24,6 +26,8 @@ urlpatterns = [
     path('api/images',include(route_gallery.urls)),
     path('api/school',include(route_school.urls)),
     path('api/college',include(route_college.urls)),
+    url(r'^media/(?P<path>.*)$', serve,{'document_root':       settings.MEDIA_ROOT}), 
+    url(r'^static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}), 
 ]
 
 if settings.DEBUG:
