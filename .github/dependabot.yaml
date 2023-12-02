@@ -11,6 +11,6 @@ updates:
     commit-message:
       prefix: "chore"
       include: "scope"
-    open-pull-request-limit: 20
+    open-pull-requests-limit: 20
     reviewers:
       - "Tushar98644"
