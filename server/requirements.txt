@@ -54,7 +54,7 @@ sqlparse==0.4.2
 tk==0.1.0
 toml==0.10.2
 tools==0.1.9
-urllib3==1.26.13
+urllib3==1.26.18
 virtualenv==20.15.1
 virtualenv-clone==0.5.7
 webencodings==0.5.1
