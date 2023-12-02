@@ -50,7 +50,7 @@ requests==2.31.0
 six==1.16.0
 soupsieve==2.3.2.post1
 SQLAlchemy==1.4.40
-sqlparse==0.4.2
+sqlparse==0.4.4
 tk==0.1.0
 toml==0.10.2
 tools==0.1.9
