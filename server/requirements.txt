@@ -21,7 +21,7 @@ django-phonenumber-field==7.0.2
 djangorestframework==3.14.0
 environ==1.0
 filelock==3.7.1
-Flask==2.2.2
+Flask==2.2.5
 Flask-SQLAlchemy==2.5.1
 gunicorn==20.1.0
 html5lib==1.1
