@@ -71,7 +71,7 @@ const Card_main = () => {
                     </div>
                 </div>
             )}
-            <div className="grid grid-cols-3 gap-12 p-20">
+            <div className="grid md:grid-cols-3 grid-flow-row gap-12 md:p-20 p-12">
                 {minutes.map((minute: Minute, index) => (
                     <div className="col mb-5" key={index}>
                         <div className="card">
@@ -82,7 +82,7 @@ const Card_main = () => {
                                     {minute.description}
                                 </p>
                             </div>
-                            <div className="buttons flex flex-row gap-8 justify-center items-center">
+                            <div className="buttons flex flex-row gap-8 justify-center items-center mx-6">
                                 <motion.button
                                     whileTap={{ scale: 0.8 }}
                                     whileHover={{ scale: 1.1 }}
