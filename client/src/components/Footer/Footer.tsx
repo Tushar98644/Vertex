@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
     return (
-        <MDBFooter className='text-center text-white' style={{ backgroundColor: '#caced1', marginTop: "7vw" }}>
+        <MDBFooter className='text-center pt-4 text-white' style={{ backgroundColor: '#caced1', marginTop: "7vw" }}>
             <MDBContainer className='p-4'>
                 <section className='section'>
                     <MDBRow>
