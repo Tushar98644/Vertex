@@ -2,7 +2,7 @@
 'use client'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import { ChangeEvent } from 'react';
+import { ChangeEvent, Fragment } from 'react';
 import {
     MDBInput,
 }
@@ -57,7 +57,7 @@ const Minute_modal = ({ minute, closeModal, updateMinute }: Props) => {
     };
 
     return (
-        <>
+        <Fragment>
             <Modal show={true} onHide={closeModal}>
                 <Modal.Header closeButton>
                     <Modal.Title>Update Minute</Modal.Title>
@@ -76,7 +76,7 @@ const Minute_modal = ({ minute, closeModal, updateMinute }: Props) => {
                     </Button>
                 </Modal.Footer>
             </Modal>
-        </>
+        </Fragment>
     );
 }
 

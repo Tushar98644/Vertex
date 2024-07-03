@@ -1,17 +1,13 @@
-import Footer from "../components/Footer/Footer";
-import Header from "@/components/Navbar/Navbar";
-import Card from "@/components/cards/card";
+import { Card, Navbar } from "@/components";
+import { Fragment } from "react";
 
 
 const Minutes = () => {
   return (
-    <>
-      <Header Heading="Minute List" />
-      <div className="flex flex-row gap-12">
-        <Card />
-      </div>
-      <Footer />
-    </>
+    <Fragment>
+      <Navbar Heading="Minute List" />
+      <Card />
+    </Fragment>
   );
 }
 

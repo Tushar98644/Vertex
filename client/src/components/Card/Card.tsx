@@ -65,10 +65,6 @@ const Card_main = () => {
                     minute={selectedMinute}
                     closeModal={closeModal}
                     updateMinute={updateMinute} />
-
-                    <div>
-                        <h1>Minutes</h1>
-                    </div>
                 </div>
             )}
             <div className="grid md:grid-cols-3 grid-flow-row gap-12 md:p-20 p-12">

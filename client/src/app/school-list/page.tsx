@@ -1,17 +1,13 @@
-import Footer from "@/components/Footer/Footer";
-import Navbar from "@/components/Navbar/Navbar";
-import School_form from "@/components/School_form/School_form";
-import School_view from "@/components/School_form/School_view";
-
+import { Navbar, School_form, School_view } from "@/components";
+import { Fragment } from "react";
 
 const School_List = () => {
     return (
-        <>
+        <Fragment>
             <Navbar Heading="School List" />
             <School_form />
             <School_view />
-            <Footer />
-        </>
+        </Fragment>
     );
 }
 

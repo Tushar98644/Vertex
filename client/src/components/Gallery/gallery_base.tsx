@@ -6,7 +6,7 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Fragment } from "react";
 import axios from "axios";
 import { motion } from "framer-motion";
 import styled from "styled-components";
@@ -53,7 +53,7 @@ const Gallery_base = () => {
     }, [])
 
     return (
-        <>
+        <Fragment>
             <Button_main whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }} type="button" onClick={() => setOpen(true)}>
                 View Gallery
             </Button_main>
@@ -68,7 +68,7 @@ const Gallery_base = () => {
                     ))
                 ]}
             />
-        </>
+        </Fragment>
     );
 };
 

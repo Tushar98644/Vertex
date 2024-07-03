@@ -1,15 +1,14 @@
-import College_form from "@/components/College_form/College_form";
-import College_view from "@/components/College_form/College_view";
-import Footer from "@/components/Footer/Footer";
-import Navbar from "@/components/Navbar/Navbar";
 
+import { College_form, College_view, Navbar } from "@/components";
+import { Fragment } from "react";
 
 const College_List = () => {
     return (
-        <><Navbar Heading="College List" />
+        <Fragment>
+            <Navbar Heading="College List" />
             <College_form />
             <College_view />
-            <Footer /></>
+        </Fragment>
     );
 }
 

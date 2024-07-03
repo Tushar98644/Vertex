@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import Footer from "@/components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <SpeedInsights/>
       <body className={inter.className}>{children}</body>
+      <Footer />
     </html>
   );
 }

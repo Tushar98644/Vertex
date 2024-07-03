@@ -1,14 +1,13 @@
-import Footer from "@/components/Footer/Footer";
+import { Navbar } from "@/components";
 import Form from "@/components/Minute_form/Form";
-import Navbar from "@/components/Navbar/Navbar";
+import { Fragment } from "react";
 
 const Add_minutes = () => {
     return (
-        <>
+        <Fragment>
             <Navbar Heading="Add Minutes" />
             <Form />
-            <Footer />
-        </>
+        </Fragment>
     );
 }
 
