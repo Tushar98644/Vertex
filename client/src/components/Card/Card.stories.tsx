@@ -1,5 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
-import Card from './card';
+import Card from './Card';
 
 type CardProps = React.ComponentProps<typeof Card>;
 
