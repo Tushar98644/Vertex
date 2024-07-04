@@ -5,4 +5,4 @@ class Gallery(models.Model):
     image = models.ImageField(upload_to='images/',blank=False,null=False)
 
     def __str__(self):
-        return self.Title
+        return self.title

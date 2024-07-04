@@ -7,4 +7,4 @@ class School(models.Model):
     contact=models.PositiveIntegerField(blank=False,null=False,max_length=10)
     
     def __str__(self):
-        return self.Name
+        return self.name

@@ -8,4 +8,4 @@ class Minute(models.Model):
     image = models.ImageField(upload_to='images/',blank=True,null=True)
 
     def __str__(self):
-        return self.name
+        return self.title

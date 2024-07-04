@@ -1,0 +1,14 @@
+FROM python:3.12.2-alpine3.19 as backend
+ENV PYTHONUNBUFFERED=1
+WORKDIR /backend
+COPY /server .
+RUN if [ ! -f requirements.txt ]; then echo "requirements.txt not found"; exit 1; fi
+RUN pip install --no-cache-dir -r requirements.txt
+CMD ["sh", "-c", "echo 'Starting backend server...' && ls -l && python manage.py runserver 0.0.0.0:8000"]
+
+FROM node:20-alpine as frontend
+WORKDIR /frontend
+COPY /client .
+RUN npm install pnpm -g
+RUN pnpm install
+CMD ["pnpm", "dev"]
