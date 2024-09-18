@@ -14,7 +14,7 @@
     "axios": "^1.7.2",
     "framer-motion": "^11.2.12",
     "mdb-react-ui-kit": "^8.0.0",
-    "next": "14.2.4",
+    "next": "14.2.10",
     "react": "^18",
     "react-bootstrap": "^2.10.3",
     "react-dom": "^18",
